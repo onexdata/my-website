@@ -1,14 +1,61 @@
+@import url('../vars.css');
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 body {
-  margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-article,
+
+html, body, #___gatsby, #gatsby-focus-wrapper {
+  overflow: hidden;
+  width   : 100%;
+  height  : 100%;
+  margin  : 0;
+  padding : 0;
+}
+
+h1 {
+  font-family: 'Rubik', sans-serif;
+  color: var(--color-title);
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+  margin: 20px 0;
+}
+
+h3 {
+  font-family: 'Rubik', sans-serif;
+  color: var(--color-title);
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1rem;
+  color: var(--color-title);
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--color-primary);
+}
+
+a:hover {
+  font-weight: 700;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* article,
 aside,
 details,
 figcaption,
@@ -619,4 +666,4 @@ pre tt:after {
   html {
     font-size: 100%;
   }
-}
+} */
